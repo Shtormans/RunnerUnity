@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/Background/MainMenuBackground.jpeg?fileID=21300000&amp;guid=b17e7711c4a658b4989797897062e493&amp;type=3#MainMenuBackground&apos;);">
+        <ui:VisualElement name="UpperElements" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; height: 10%; max-height: 10%; min-height: 20%; margin-left: 3%;">
+            <ui:VisualElement name="Stats" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100%; max-height: 100%; min-height: 100%; flex-direction: row; justify-content: flex-start; align-self: auto; align-items: stretch;">
+                <ui:VisualElement name="Labels" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-self: flex-start; align-items: flex-start; width: 12%; max-width: 12%; min-width: 12%;">
+                    <ui:Label tabindex="-1" text="Best Score:" display-tooltip-when-elided="true" name="BestScoreLabel" style="-unity-font-style: bold; font-size: 20px; color: rgb(255, 255, 255); align-self: flex-start;" />
+                    <ui:Label tabindex="-1" text="Last Score:" display-tooltip-when-elided="true" name="LastScoreLabel" style="font-size: 20px; color: rgb(255, 255, 255); -unity-font-style: bold; align-self: flex-start;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ActualInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-self: flex-start; align-items: flex-start;">
+                    <ui:Label tabindex="-1" text="00,000" display-tooltip-when-elided="true" name="BestScoreText" style="font-size: 20px; color: rgb(255, 255, 255); -unity-font-style: bold;" />
+                    <ui:Label tabindex="-1" text="00,000" display-tooltip-when-elided="true" name="LastScoreText" style="font-size: 20px; color: rgb(255, 255, 255); -unity-font-style: bold;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button text="Start Game" display-tooltip-when-elided="true" name="StartGameButton" style="margin-top: 10%; align-items: center; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; align-self: center; width: 20%; max-width: 20%; min-width: 20%; height: 10%; max-height: 10%; min-height: 10%; -unity-font-style: bold; font-size: 20px;" />
+    </ui:VisualElement>
+</ui:UXML>

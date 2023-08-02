@@ -1,0 +1,21 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Container" class="container" style="flex-grow: 1; background-color: rgba(255, 255, 255, 0.4); margin-left: 30%; margin-right: 30%; margin-top: 15%; margin-bottom: 10%; background-image: none; border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-left-radius: 25px; border-bottom-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; transform-origin: center; -unity-background-scale-mode: stretch-to-fill; -unity-slice-left: 0; -unity-slice-top: 0; -unity-slice-right: 0; -unity-slice-bottom: 0; font-size: 14px; height: auto;">
+        <ui:VisualElement name="Stats">
+            <ui:Label tabindex="-1" text="2,777" display-tooltip-when-elided="true" name="ScoreText" style="align-self: center; font-size: 24px; -unity-font-style: bold; -unity-font: url(&apos;project://database/Assets/UI/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=39a0a8089577a164da0797cc1bdf5b7c&amp;type=3#NotInter-Regular&apos;);" />
+            <ui:VisualElement name="OtherInfo" tabindex="0" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-start; flex-direction: row; justify-content: center; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+                <ui:VisualElement name="Labels" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-end; width: 50%; max-width: none; min-width: auto; align-self: flex-start; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+                    <ui:Label tabindex="0" text="Time" display-tooltip-when-elided="true" name="TimeLabel" style="color: rgb(224, 169, 78); -unity-font-style: bold; font-size: 18px;" />
+                    <ui:Label tabindex="0" text="Bonus Collected" display-tooltip-when-elided="true" name="BonusLabel" style="color: rgb(224, 169, 78); -unity-font-style: bold; font-size: 18px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="ActualInfo" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: flex-start; width: 50%; max-width: none; min-width: auto; align-self: flex-end; margin-left: auto; margin-right: auto; margin-top: auto; margin-bottom: auto;">
+                    <ui:Label tabindex="-1" text="00:12" display-tooltip-when-elided="true" name="TimeText" style="-unity-font-style: bold; font-size: 18px;" />
+                    <ui:Label tabindex="-1" text="0" display-tooltip-when-elided="true" name="BonusText" style="-unity-font-style: bold; font-size: 18px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="Buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: auto; max-height: none; min-height: auto; align-items: flex-start; flex-direction: row; justify-content: space-around; align-self: center; margin-top: 15px; width: 80%; max-width: none; min-width: auto;">
+            <ui:Button text="Home" display-tooltip-when-elided="true" name="HomeButton" style="width: 50%; height: 20%;" />
+            <ui:Button text="Restart" display-tooltip-when-elided="true" name="RestartButton" style="width: 50%; height: 20%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
